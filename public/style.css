@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700');
+
+header::before, .box::before {
+  content: " ";
+  display: block;
+  height:15px;
+  width: 100%;
+  background: linear-gradient( 45deg, #f1484B, #ED764B );
+}
+.box {
+  z-index: 10;
+  box-shadow: 0 0 15px #ccc;
+  background: white;
+  padding: 30px;
+  margin-top: 50px;
+
+}
+.box::before {
+  height:7px;
+  top: 0;left: 0;
+  position: absolute;
+}
+.area {
+  box-shadow: 0 0 15px #ccc;
+  background: white;
+  padding: 20px;
+}
+.area h3 {
+  border-bottom: 3px solid #ED764B;
+}
+.community{
+  background: #eaeaea;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.community img {
+  margin-top: 20px;
+}
+h1 {
+  padding-top: 20px;
+}
+a {
+  white-space:nowrap;
+  color: black;
+  transition: color 0.3s;
+}
+a:hover, a.active {
+  color: #ED764B;
+  text-decoration: none;
+}
+p a {
+  color: #f1484B;
+}
+img {
+  max-width: 100%;
+}
+main section {
+  padding: 50px 0;
+}
+body {
+  margin-top: 135px;
+  background: #FAFAFA;
+  font-family: "Miriam Libre";
+}
+.main-bar {
+  background: #FAFAFA;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+.menu, .search {
+  min-width: 50px;
+  transition: background 0.3s;
+  padding: 0 30px;
+}
+.menu:hover{
+  background: #F0F0F0;
+  color: #ED764B;
+  cursor: pointer;
+}
+.logo {
+  width: 40em;
+  text-align: center;
+
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.bar-box-left, .bar-box-right {
+  height:59px;
+  line-height: 60px;
+}
+.bar-box-left {
+  border-right: 1px solid #ccc;
+}
+.bar-box-right {
+  border-left: 1px solid #ccc;
+}
+
+nav ul{
+  padding: 0;margin: 0;
+  list-style: none;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  background: #FAFAFA;
+}
+nav ul li {
+  border-right: 1px solid #ccc;
+  text-align: center;
+  width: 100%;
+  line-height: 60px;
+}
+nav li:last-child {
+  border:none;
+}
+.bar-box-left a, .bar-box-right a, nav ul li a {
+  padding: 0 30px;
+  display: block;
+  height: 59px;
+}
+.bar-box-left a:hover, .bar-box-right a:hover, nav li a:hover {
+  transition: all 0.3s;
+  background: #F0F0F0;
+}
+
+#ff_search {
+  width: 200px;
+  padding: 0 0 0 30px;
+  background: transparent;
+  border: none;
+}
+
+main {
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ED764B;
+
+}
+
+.btn-primary{
+  background: linear-gradient( 45deg, #f1484B, #ED764B );
+  border:none;
+
+}
+.btn-primary:hover{
+  background:#f1484B;
+  border:none;
+}
+p#error {
+  color: red;
+
+}
+.user-nav .user-name{
+  color:#ED764B;
+}
+.user-nav {
+  background: #F0F0F0;
+  color: ;
+  border-bottom: 1px solid #ccc;
+}
+.user-nav ul{
+  padding: 0;margin: 0;
+  list-style: none;
+  height: 30px;
+  border-bottom: 1px solid #F0F0F0;
+
+}
+.user-nav li {
+  border-right: 1px solid #ccc;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+}
+
+footer {
+  padding: 0;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+  width: 100%;
+  background: white;
+}
+#geo-map {
+  height: 250px;
+}
+#map-around,
+#event-map {
+  height: 500px;
+}
+.errors {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #f1484B;
+  border-bottom: 1px solid #f1484B;
+  border-top: 1px solid #f1484B;
+}
+.message {
+  text-align: center;
+  font-weight: 700;
+}
+.intro {
+  background:#f1484B;
+  color: white;
+}
+
+.section-alt {
+  background:#EAEAEA;
+  color: #ED764B;
+}
+.member-card{
+  position: relative;
+  margin: 10px;
+  width: 220px;
+  padding: 10px 10px 30px 10px;
+  border: 1px solid #ccc;
+}
+.member-card a.btn {
+  bottom: 10px;
+}
+#community-content .img-container {
+  position: relative;
+  margin-bottom: 50px;
+}
+#community-content h1 {
+  position: absolute;
+  top: 60%;
+  color:white;
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+#adminMemberList tr {
+  text-align: center;
+}
+#adminMemberList tbody tr :first-child {
+  text-align: left;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
